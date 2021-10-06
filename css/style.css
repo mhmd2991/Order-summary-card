@@ -1,1 +1,175 @@
+/* Start Global Rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    transition: all .3s ease-in-out;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+    --whiteColor: #ffffff;
+    --hoverColor: #8881d1;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-color: var(--paleBlue);
+}
+
+p {
+    color: var(--desaturatedBlue);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--darkBlue);
+    font-weight: 900;
+}
+
+a {
+    font-weight: 900;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/pattern-background-desktop.svg) no-repeat;
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+main .box {
+    max-width: 450px;
+    background-color: var(--whiteColor);
+    border-radius: 20px;
+    padding-bottom: 52px;
+    box-shadow: 0px 8px 8px 0px hsl(228, 45%, 44%, 0.15);
+}
+
+main .box .top img {
+    border-radius: 20px 20px 0 0;
+}
+
+main .box .bottom {
+    text-align: center;
+}
+
+main .box .bottom h1 {
+    margin: 50px 0 30px 0;
+}
+
+main .box .bottom > p {
+    max-width: 293px;
+    margin: 0 auto 23px auto;
+    line-height: 1.6;
+}
+
+main .box .bottom .plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background-color: var(--veryPaleBlue);
+    max-width: 354px;
+    margin: 0 auto 30px auto;
+    padding: 25px;
+}
+
+main .box .bottom .plan .text {
+    margin-left: 20px;
+}
+
+main .box .bottom .plan .text h4 {
+    margin-bottom: 5px;
+}
+
+
+main .box .bottom .plan a {
+    margin-left: 84px;
+    color: var(--brightBlue);
+    text-decoration: underline;
+}
+
+main .box .bottom .plan a:hover {
+    color: var(--hoverColor);
+    text-decoration: none;
+}
+
+main .box .bottom .proceed {
+    display: block;
+    max-width: 354px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    color: var(--whiteColor);
+    background-color: var(--brightBlue);
+    border-radius: 8px;
+    padding: 20px;
+    letter-spacing: .5px;
+    box-shadow: 0px 8px 8px 0px rgba(50, 50, 50, 0.27);
+}
+
+main .box .bottom .proceed:hover {
+    background-color: var(--hoverColor);
+}
+
+main .box .bottom .cancel {
+    color: var(--desaturatedBlue);
+    letter-spacing: .5px;
+}
+
+main .box .bottom .cancel:hover {
+    color: var(--darkBlue);
+}
+
+@media (max-width: 415px) {
+    main {
+        background: url(../images/pattern-background-mobile.svg) no-repeat;
+    }
+
+    main .box {
+        max-width: 327px;
+    }
+
+    main .box .bottom > p {
+        max-width: 245px;
+    }
+
+    main .box .bottom .plan {
+        max-width: 279px;
+        padding: 15px;
+    }
+
+    main .box .bottom .plan a {
+        margin-left: 9px;
+    }
+
+    main .box .bottom .plan .text {
+        margin-left: 5px;
+    }
+
+    main .box .bottom .proceed {
+        max-width: 280px;
+    }
+}
