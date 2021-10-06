@@ -19,7 +19,6 @@ html {
     --desaturatedBlue: hsl(224, 23%, 55%);
     --darkBlue: hsl(223, 47%, 23%);
     --whiteColor: #ffffff;
-    --hoverColor: #8881d1;
 }
 
 body {
@@ -113,7 +112,7 @@ main .box .bottom .plan a {
 }
 
 main .box .bottom .plan a:hover {
-    color: var(--hoverColor);
+    opacity: 0.6;
     text-decoration: none;
 }
 
@@ -131,7 +130,7 @@ main .box .bottom .proceed {
 }
 
 main .box .bottom .proceed:hover {
-    background-color: var(--hoverColor);
+    opacity: 0.6;
 }
 
 main .box .bottom .cancel {
